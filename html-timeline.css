@@ -8,36 +8,7 @@ details[open] summary ~ * {
   100%  {opacity: 1; margin-left: 0px}
 }
 
-/* method 2, using transitions */
-/*details {
-margin: 1.3rem 0;
-border-bottom: 1px solid #aaa;
-padding: 0.5rem;
-height: auto;
-max-height: 1.5rem; /* set to line heihgt */
-transition: all 0.1s ease;
-}
 
-details[open] {
-max-height: 99rem;
-transition: all 1s ease;
-border: 1px solid #aaa;
-}
-
-details summary {
-font-weight: bold;
-cursor: pointer;
-margin-bottom: 0.5em;
-font-weight: bold;
-margin: -0.5em -0.5em 0;
-padding: 0.5em;
-}
-
-details[open] summary {
-border-bottom: 1px solid #aaa;
-margin-bottom: 0.8em;
-}
-*/
 
 .timeline-container {
   border-left: 2px solid #ccc;

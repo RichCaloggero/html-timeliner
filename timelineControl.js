@@ -15,10 +15,12 @@ t.insertAdjacentHTML("afterbegin",
 `); // insert html
 
 t.addEventListener("click", e => {
-const key = e.target.dataset.control;
-if (key in functionMap)  {
+const func = e.target.dataset.control;
+if (func in functionMap)  {
 if (e.target.getAttribute("aria-pressed") === "true") return;
-functionMap[key](t);
+
+$$("[aria-pressed]", e.target.parentElement).forEach(button => button.setAttribute("aria-pressed", "false"));
+functionMap[func](t);
 toggleState(e.target);
 } // if
 }); // click handler
