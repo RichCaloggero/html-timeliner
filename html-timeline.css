@@ -1,4 +1,4 @@
-/* method 1, using animation and keyframes */
+/* using animation and keyframes */
 details[open] summary ~ * {
   animation: sweep .5s ease-in-out;
 }
